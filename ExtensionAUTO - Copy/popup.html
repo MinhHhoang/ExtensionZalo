@@ -1,0 +1,127 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Apply font family to the entire page */
+    body {
+      font-family: "Lucida Console", "Courier New", monospace;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+    }
+
+    .container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #d9eaf7;
+      /* Light blue background matching the image */
+    }
+
+    .container p {
+      margin: 0 0 5px 0;
+      font-weight: bold;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+
+    }
+
+    .container input[type="text"],
+    .container textarea {
+      margin-bottom: 10px;
+      width: 100%;
+      /* Adjust width to fit within the container's padding */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      /* Include padding and border in the element's width and height */
+    }
+
+    .container button {
+      width: 100px;
+      padding: 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #btnAdd {
+      background-color: #4CAF50;
+      /* Green color */
+      width: 80px;
+      /* Button width adjustment */
+    }
+
+    #btnStop {
+      background-color: #f44336;
+      /* Red color */
+    }
+
+    #btnStart {
+      background-color: #008CBA;
+      /* Blue color */
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .header {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">TUKTECH.COM</div>
+    <p>API KEY</p>
+    <div class="input-group">
+      <input id="api_key_value" type="text" placeholder="Nhập key của bạn">
+      <button id="btnAdd">ADD</button>
+    </div>
+
+    <p>SETTING</p>
+    <p>LIST PHONE</p>
+    <textarea id="phoneList" cols="40" rows="5" placeholder="Nhập danh sách số điện thoại"></textarea>
+
+    <p>MESSAGE</p>
+    <textarea id="message" cols="40" rows="5" placeholder="Nhập tin nhắn"></textarea>
+
+    <div class="button-group">
+      <button id="btnStop">STOP</button>
+      <button id="btnStart">START</button>
+    </div>
+  </div>
+  <script src="popup.js" type="text/javascript"></script>
+</body>
+
+</html>

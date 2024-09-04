@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Zalo Tool",
+  "version": "1.0",
+  "description": "Tool Tuktech.com cho phép tự động hóa kết bạn",
+  "content_scripts": [
+    {
+      "matches": ["https://chat.zalo.me/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto send message popup"
+  }
+  
+}
